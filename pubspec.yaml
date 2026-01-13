@@ -1,0 +1,60 @@
+name: doable_todo_list_app
+description: "Offline To-do List"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^2.0.10+1
+
+  # Hapus sqflite dan sqflite_common_ffi
+  # sqflite: ^2.4.0+1
+  # sqflite_common_ffi: ^2.3.0
+
+  # Dependensi Hive
+  hive: ^2.2.3            # Database NoSQL super cepat (cek pub.dev untuk versi terbaru)
+  hive_flutter: ^1.1.0    # Integrasi Hive dengan Flutter (cek pub.dev untuk versi terbaru)
+  uuid: ^4.3.3            # Untuk ID unik pada model Todo
+
+  path_provider: ^2.1.2
+  intl: ^0.20.2
+  path: ^1.8.3 # Perbarui versi path
+  url_launcher: ^6.3.0
+  shared_preferences: ^2.3.2
+  timezone: ^0.10.1
+  awesome_notifications: ^0.10.1
+  awesome_notifications_core: ^0.10.1
+  awesome_notifications_fcm: ^0.10.1
+  provider: ^6.1.5+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.1
+  # Tambahkan generator Hive dan build_runner
+  hive_generator: ^2.0.1 # Cek pub.dev untuk versi terbaru
+  build_runner: ^2.4.8 # Pastikan ini kompatibel dengan hive_generator
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path_android: "img/logo.png"
+  image_path_ios: "img/logo.png"
+  adaptive_icon_background: "img/background.png"
+  adaptive_icon_foreground: "img/foreground.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+  - assets/
